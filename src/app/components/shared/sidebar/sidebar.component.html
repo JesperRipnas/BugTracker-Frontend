@@ -1,0 +1,29 @@
+<nav class="sidebar">
+  <div class="link">
+    <span class="material-icons"> home </span
+    ><span class="linktext">Dashboard</span>
+  </div>
+  <div class="link">
+    <span class="material-icons"> feed </span><span class="linktext">Feed</span>
+  </div>
+  <div class="link">
+    <span class="material-icons"> work_outline </span
+    ><span class="linktext">Projects</span>
+  </div>
+  <div class="link">
+    <span class="material-icons"> task_alt </span
+    ><span class="linktext">My tasks</span>
+  </div>
+  <div class="link">
+    <span class="material-icons"> pest_control </span
+    ><span class="linktext">Bugs</span>
+  </div>
+  <div class="link" *ngIf="role_administrator">
+    <span class="material-icons"> person_add_disabled </span
+    ><span class="linktext">Users</span>
+  </div>
+  <div class="link" *ngIf="role_administrator">
+    <span class="material-icons"> settings </span
+    ><span class="linktext">Settings</span>
+  </div>
+</nav>
